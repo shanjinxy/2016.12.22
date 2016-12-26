@@ -133,9 +133,9 @@ $(function () {
 
     })
     //给a点击添加变色图片
-    $(".page .prevnext a").click(function () {
-        $(this).addClass('visited');
-    })
+    // $(".page .prevnext a").click(function () {
+    //     $(this).addClass('visited');
+    // })
 
     // 计数器 count
     var count =0;

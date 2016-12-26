@@ -204,9 +204,11 @@ html {
 
 .page .inputbox b{
     position: absolute;
-    font-family: normal;
-    top:25% ;
-    left:30%;
+    font-weight: normal;
+    font-family: "microsoft yahei", "sans-serif";
+    top:50% ;
+    left:50%;
+    transform: translate(-50%,-50%);
     font-size: 0.2rem;
 }
 .page .inputbox i {
@@ -235,18 +237,18 @@ html {
 
 .page input[type=image]{
     display: block;
-    width: 88%;
+    width: 95%;
     margin: 0 auto;
 }
 
 /*点击按钮上下文*/
 .page .prevnext{
     width: 100%;
-    padding: 2% 4%;
+    padding: 2% 1%;
 }
 .page .prevnext a{
     display: inline-block;
-    width:29%;
+    width:32%;
     height: 0.5rem;
     background: url("../images-wt/answers/next.png") no-repeat center center;
     background-size: 92%,0.5rem;
@@ -255,14 +257,14 @@ html {
     background-image: url("../images-wt/answers/prv.png")
 }
 
-.page .prevnext .prev.visited{
-    background: url("../images-wt/answers/renprev.png") no-repeat center center;
-    background-size: 92%,0.5rem;
-}
+/*.page .prevnext .prev.visited{*/
+    /*background: url("../images-wt/answers/renprev.png") no-repeat center center;*/
+    /*background-size: 92%,0.5rem;*/
+/*}*/
 
-.page .prevnext .next.visited{
-    background-image: url("../images-wt/answers/rednext .png");
-}
+/*.page .prevnext .next.visited{*/
+    /*background-image: url("../images-wt/answers/rednext .png");*/
+/*}*/
 /*/page2开始*/
 .page12 .prevnext a.submit{
     background-image: url(../images-wt/end/submit.png);
