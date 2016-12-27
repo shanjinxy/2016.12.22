@@ -131,7 +131,7 @@ $(function () {
     $(".page11 .cha").click(function () {
         $(".page11").hide();
         window.location.reload();
-       
+
 
     })
     //给a点击添加变色图片
