@@ -31,8 +31,6 @@ $(function () {
     })
 
 
-
-
     //page2 按钮点击
 
     $(".page2 .inputbox").click(function () {
@@ -190,27 +188,24 @@ $(function () {
     })
 
 
-
     // z最后页面的叉叉关闭
     $("#shutdown").click(function () {
+        $(".page11").hide();
         window.location.reload();
 
     })
 
 
-
-
-
     $(".page6button img").click(function () {
 
-        ga('send', 'event', { eventCategory: '下载选股宝',
+        ga('send', 'event', { eventCategory: 'Top10涨跌继续挑战',
             eventAction: 'click',
             eventLabel: 'Top10涨跌之最'});
     })
     $(".page11 .download").click(function (e) {
         e.preventDefault();
         ga('send', 'event', {
-            eventCategory: '立即下载点击量',
+            eventCategory: 'Top10涨跌立即下载点击量',
             eventAction: 'click',
             eventLabel: 'Top10涨跌之最'}
         );
