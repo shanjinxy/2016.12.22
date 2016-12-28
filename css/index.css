@@ -1,0 +1,373 @@
+@charset "utf-8";
+body,
+html {
+    width: 100%;
+    min-height: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+html {
+    font-size: 100px;
+}
+@media screen and (min-width: 320px) {
+    html{
+        font-size: 75px;
+    }
+}
+@media screen and (min-width: 375px){
+        html{
+            font-size: 100px;
+        }
+}
+@media screen and (min-width: 768px) {
+    html{
+        font-size: 140px;
+    }
+}
+.layout {
+    width: 100%;
+    background: url("../images-wt/fontpage/bg.png") no-repeat center center;
+    height: 100%;
+    min-height: 100%;
+    max-width: 750px;
+    min-width: 320px;
+    margin: 0 auto;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.page0 {
+    width: 100%;
+    height: 100%;
+}
+
+.page0 .imgbox {
+    width: 100%;
+    /*position: absolute;*/
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page0 .imgbox .fontimg1 {
+    animation: page0img1 1s linear;
+    width: 100%;
+}
+
+.page0.current .imgbox .fontimg1 {
+    /*opacity: 0;*/
+    /*display: none;*/
+}
+
+.page0 .fontimg2 {
+    left: 0;
+    transform: translateX(-100%);
+    opacity: 0;
+}
+
+.page0.current .fontimg2 {
+    transition: all 0.5s linear;
+    animation-fill-mode: forwards;
+    left: 0;
+    opacity: 1;
+    transform: translateX(0);
+}
+
+@keyframes page0img1 {
+    0% {
+        transform: scale(0.2);
+
+    }
+    50% {
+        transform: scale(0.8);
+
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.page0 .page0box2 {
+    position: absolute;
+    /*position: relative;*/
+    width: 100%;
+    top:75%;
+}
+
+.page0 .page0box2 img {
+    opacity: 0;
+    width: 57%;
+    margin: 0 auto;
+    animation: page0button linear 0.8s infinite;
+}
+
+.page0.current .page0box2 img {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+@keyframes page0button {
+    0% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(20deg);
+    }
+}
+
+
+
+/*答题开始*/
+/*PAGE1开始*/
+.page{
+    width: 100%;
+    /*height:100%;*/
+    min-height: 100%;
+    background: rgba(55,54,65,0.9) url("../images-wt/answers/anbg.png") no-repeat center center;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+/*logo*/
+
+.page .logo {
+
+    width: 100%;
+    color: #fff;
+    padding:0.1rem 0;
+    position:absolute;
+    bottom:1%;
+    /*padding: 32% 0 3% 0;*/
+
+}
+.page .logo img{
+    width: 25%;
+    margin: 0 auto;
+}
+
+.page .top10{
+    display: none;
+    width: 100%;
+}
+.page .top10 img{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.page .add {
+    padding-top: 4%;
+    width: 100%;
+}
+.page .add img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+    /*涨幅文本和图片*/
+.addtext {
+    color: #fff;
+    width: 100%;
+
+}
+.addtext .p{
+    padding:3% 3%;
+    font-family: "microsoft yahei", "sans-serif";
+    font-size: 0.18rem;
+}
+.addtext p{
+    /*text-indent: 3%;*/
+    padding-top: 2px ;
+    font-family: "microsoft yahei", "sans-serif";
+
+}
+
+.addtext img{
+    width: 95%;
+    margin: 5px auto 0;
+}
+
+.page .answers {
+    position: relative;
+    width: 100%;
+    margin-top: 0.3rem;
+    padding-bottom: 0.8rem;
+
+}
+.page .inputbox {
+    position: relative;
+    width: 100%;
+}
+
+.page .inputbox b{
+    position: absolute;
+    font-weight: normal;
+    font-family: "microsoft yahei", "sans-serif";
+    top:50% ;
+    left:50%;
+    transform: translate(-50%,-50%);
+    font-size: 0.2rem;
+}
+.page .inputbox i {
+    width: 0.4rem;
+    height: 0.4rem;
+    z-index: 5;
+    position: absolute;
+    top:45%;
+    transform: translateY(-50%);
+    right: 20%;
+    background: url("../images-wt/answers/wrong.png") no-repeat center center ;
+    background-size: 0.4rem 0.4rem;
+    display: none;
+}
+.page .active i {
+    background-image: url("../images-wt/answers/right.png");
+}
+.page .answers .clicked input{
+    disabled:true;
+}
+
+.page .answers .clicked i {
+    display: block;
+}
+
+
+.page input[type=image]{
+    display: block;
+    width: 95%;
+    margin: 0 auto;
+}
+
+/*点击按钮上下文*/
+.page .prevnext{
+    width: 100%;
+    padding: 2% 1%;
+    position: relative;
+    z-index: 99;
+}
+.page .prevnext a{
+    display: inline-block;
+    width:32%;
+    height: 0.5rem;
+    background: url("../images-wt/answers/next.png") no-repeat center center;
+    background-size: 92%,0.5rem;
+}
+.page .prevnext>.prev {
+    background-image: url("../images-wt/answers/prv.png")
+}
+
+
+/*/page2开始*/
+.page12 .prevnext a.submit{
+    background-image: url(../images-wt/end/submit.png);
+}
+
+
+.page11 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: url("../images-wt/end/bgnew.png") no-repeat center center;
+    z-index: 99;
+}
+
+
+/*设置红色字体*/
+.page11 .red{
+    color: red;
+}
+
+/*设置vip的宽度*/
+.page11 .wtvip {
+    width: 100%;
+    padding: 0 20%;
+}
+.page11 .wtvip img{
+    width: 2rem;
+    margin: 0 auto;
+}
+
+/*设置log的宽度*/
+.page11 .logo{
+    width: 100%;
+    position: absolute;
+    bottom: 1%;
+}
+.page11 .logo img{
+    width: 21%;
+    margin: 0 auto;
+}
+/*最后的背景页弹窗*/
+.page11 .backimg {
+    position:absolute;
+    width: 100%;
+   height: 90%;
+    z-index: 1;
+}
+
+/*点击×按钮*/
+.page11 .cha{
+    position: absolute;
+    top:10%;
+    right:17%;
+    font-size: 0.42rem;
+    z-index: 99;
+}
+
+/*设置中间红色大字体和位置*/
+.page11 .contentbox {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+    font-size: 0.18rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.page11 .text {
+    padding:5% 5% 8%;
+    font-size: 0.24rem;
+}
+.page11 .download {
+    width: 100%;
+    display: block;
+}
+
+.page11 .download img{
+    width: 50%;
+    margin: 0 auto;
+}
+
+
+/*设置中间过渡页*/
+.page6{
+    background: url("../images-wt/end/bgnew.png") no-repeat 100% 100%;
+    width: 100%;
+    height:100%;
+}
+
+.page6 .contenBox{
+    width: 100%;
+    padding:30% 10% 10% 10% ;
+    font-size: 0.2rem;
+}
+.page6 .contenBox p:nth-child(3){
+    margin-top: 6%;
+}
+/*.page6 .contenBox p:last-child{*/
+    /*font-size: 0.15rem;*/
+    /*margin-top: 8%;*/
+    /*transform: translateX(30%);*/
+/*}*/
+.page6 .page6button {
+    margin-top: 11%;
+}
+.page6 .page6button img{
+    width: 50%;
+    margin: 0 auto;
+}
+
