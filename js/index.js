@@ -1,5 +1,24 @@
 $(function () {
-    //首页开启定时动画效果
+
+    $(".page6button img").click(function () {
+
+        ga('send', 'event', { eventCategory: 'Top10涨跌继续挑战',
+            eventAction: 'click',
+            eventLabel: 'Top10涨跌之最'});
+    })
+    $(".page11 .download").click(function (e) {
+        e.preventDefault();
+        ga('send', 'event', {
+            eventCategory: 'Top10涨跌立即下载点击量',
+            eventAction: 'click',
+            eventLabel: 'Top10涨跌之最'}
+        );
+        setTimeout(function () {
+            window.location.href="http://bao.wallstreetcn.com/static/app.html?from=topzd";
+        },500)
+    })
+    //首页
+    // 开启定时动画效果
     setTimeout(function () {
         $(".page0").addClass('current');
     },1000)
@@ -27,7 +46,7 @@ $(function () {
             count++;
         }
 
-        console.log(count);
+        // console.log(count);
     })
 
 
@@ -175,11 +194,16 @@ $(function () {
             $("#finalnumber").html(count);
             if(count>=0&&count<=3){
                 $("#finalText").html("<p>韭菜如我香飘飘</p>");
+                document.title="韭菜如我香飘飘";
+
 
             }else if(count>=4&&count<=7){
                 $("#finalText").html("<p>来年坚定小目标，</p><p>股市不再葛优躺！</p>");
+                document.title="来年坚定小目标,股市不再葛优躺!";
             }else if(count>=8){
                 $("#finalText").html("<p>追涨杀跌我最行！</p>");
+                document.title="追涨杀跌我最行！"
+
             }
             $(".page11").show();
 
@@ -196,21 +220,5 @@ $(function () {
     })
 
 
-    $(".page6button img").click(function () {
 
-        ga('send', 'event', { eventCategory: 'Top10涨跌继续挑战',
-            eventAction: 'click',
-            eventLabel: 'Top10涨跌之最'});
-    })
-    $(".page11 .download").click(function (e) {
-        e.preventDefault();
-        ga('send', 'event', {
-            eventCategory: 'Top10涨跌立即下载点击量',
-            eventAction: 'click',
-            eventLabel: 'Top10涨跌之最'}
-        );
-        setTimeout(function () {
-            window.location.href="http://bao.wallstreetcn.com/static/app.html?from=topzd";
-        },500)
-    })
 })

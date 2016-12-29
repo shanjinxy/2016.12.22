@@ -138,9 +138,9 @@ html {
 
     width: 100%;
     color: #fff;
-    padding:0.1rem 0;
+    padding:0.2rem 0;
     position:absolute;
-    bottom:1%;
+    bottom:2%;
 
 }
 .page .logo img{
@@ -197,8 +197,8 @@ html {
 .page .answers {
     position: relative;
     width: 100%;
-    margin-top: 0.3rem;
-    padding-bottom: 0.8rem;
+    margin-top: 0.2rem;
+    padding-bottom: 0.7rem;
 
 }
 .page .inputbox {
