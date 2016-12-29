@@ -26,6 +26,12 @@ html {
         font-size: 140px;
     }
 }
+#share-pic{
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    display: block;
+}
 .layout {
     width: 100%;
     background: url("../images-wt/fontpage/bg.png") no-repeat center center;
@@ -45,7 +51,6 @@ html {
 
 .page0 .imgbox {
     width: 100%;
-    /*position: absolute;*/
     position: relative;
     top: 50%;
     transform: translateY(-50%);
@@ -56,10 +61,6 @@ html {
     width: 100%;
 }
 
-.page0.current .imgbox .fontimg1 {
-    /*opacity: 0;*/
-    /*display: none;*/
-}
 
 .page0 .fontimg2 {
     left: 0;
@@ -120,7 +121,6 @@ html {
 }
 
 
-
 /*答题开始*/
 /*PAGE1开始*/
 .page{
@@ -141,7 +141,6 @@ html {
     padding:0.1rem 0;
     position:absolute;
     bottom:1%;
-    /*padding: 32% 0 3% 0;*/
 
 }
 .page .logo img{
@@ -159,12 +158,19 @@ html {
 }
 
 .page .add {
+    color: #fff;
     padding-top: 4%;
     width: 100%;
+    margin: 0 auto;
 }
 .page .add img{
     width: 50%;
     margin: 0 auto;
+}
+.page .add p{
+    text-align: center;
+    font-size: 0.16rem;
+    padding-top:0.05rem;
 }
 
     /*涨幅文本和图片*/
@@ -175,13 +181,11 @@ html {
 }
 .addtext .p{
     padding:3% 3%;
-    font-family: "microsoft yahei", "sans-serif";
     font-size: 0.18rem;
 }
 .addtext p{
-    /*text-indent: 3%;*/
     padding-top: 2px ;
-    font-family: "microsoft yahei", "sans-serif";
+    color:#fff;
 
 }
 
@@ -205,7 +209,6 @@ html {
 .page .inputbox b{
     position: absolute;
     font-weight: normal;
-    font-family: "microsoft yahei", "sans-serif";
     top:50% ;
     left:50%;
     transform: translate(-50%,-50%);
@@ -311,7 +314,7 @@ html {
 /*点击×按钮*/
 .page11 .cha{
     position: absolute;
-    top:10%;
+    top: 0.8rem;
     right:17%;
     font-size: 0.42rem;
     z-index: 99;
@@ -323,7 +326,8 @@ html {
     position: absolute;
     text-align: center;
     font-size: 0.18rem;
-    top: 50%;
+    /*百分比改为rem*/
+    top: 3rem;
     transform: translateY(-50%);
 }
 
@@ -357,11 +361,7 @@ html {
 .page6 .contenBox p:nth-child(3){
     margin-top: 6%;
 }
-/*.page6 .contenBox p:last-child{*/
-    /*font-size: 0.15rem;*/
-    /*margin-top: 8%;*/
-    /*transform: translateX(30%);*/
-/*}*/
+
 .page6 .page6button {
     margin-top: 11%;
 }

@@ -14,7 +14,7 @@
 body {
     font-size: 14px;
     color: #333;
-    font-family: "microsoft yahei", "sans-serif";
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 
 ul, ol {
@@ -64,7 +64,7 @@ em, i {
 }
 
 h1, h2, h3, h4, h5, h6 { /* font-size:100%; */
-    font-family: Microsoft YaHei;
+    font-family: "Helvetica Neue", Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Heiti SC", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
 }
 /*css common 公用*/
 .f_left {

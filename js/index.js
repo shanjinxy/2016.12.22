@@ -189,10 +189,10 @@ $(function () {
 
 
     // z最后页面的叉叉关闭
-    $("#shutdown").click(function () {
+    $(".page11 .cha").click(function () {
         $(".page11").hide();
-        window.location.reload();
-
+       document.location.reload(true);
+       $(".page0").show();
     })
 
 
